@@ -25,10 +25,24 @@ SECRET_KEY = 'django-insecure-n3dsk0gxmbr062q-*2g=2c-f4-2r-pz_655r)l2$m%!+7zo#*i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app']
-
-
-
+CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = [
+    'https://taskly-django-backend.vercel.app/',
+    'https://*.127.0.0.1',
+    'http://127.0.0.1:5500',
+]
+CORS_ALLOW_HEADERS = [
+    "content-type",
+    "x-requested-with",
+    "authorization",
+    "x-csrftoken",
+    "accept",
+    "accept-encoding",
+    "dnt",
+    "origin",
+    "user-agent",
+]
 # Application definition
 
 INSTALLED_APPS = [
