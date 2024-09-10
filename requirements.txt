@@ -22,7 +22,6 @@ Pillow
 pip
 pipenv
 platformdirs
-psycopg2
 psycopg2-binary
 PyAutoGUI
 PyGetWindow
